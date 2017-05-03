@@ -43,8 +43,11 @@
   @include desktop {
     flex: 0 1 25%;
   }
+
+}
+
   
-  div {
+.innernews-list {
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -64,7 +67,7 @@
     }
   }
 
-  .articles-text {
+.articles-text {
     background-color: rgba(0, 0, 0, 0.7);
     bottom: 0;
     padding: 10px;
@@ -76,4 +79,4 @@
       bottom: -200px;
     }
   }
-}
+   

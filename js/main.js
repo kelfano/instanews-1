@@ -13,6 +13,8 @@ $(function () {
     $('.nyt-logo').addClass('nyt-logo-small');
     $('.loader').show();
 
+
+
     $.ajax({
       method: 'GET',
       url: urlNyt,
@@ -24,7 +26,7 @@ $(function () {
       }).slice(0,12)
       $.each(imagesTrue, function(index, value) {
         newsDisplayed += '<li class="news-list">',
-        newsDisplayed += '<div style="background-image: url(\'' + value.multimedia[4].url + '\')">',
+        newsDisplayed += '<div class="innernews-list" style="background-image: url(' + value.multimedia[4].url + ')">',
         newsDisplayed += '<a href ="' + value.url + '" target="_blank">',
         newsDisplayed += '<p class="articles-text">' + value.abstract + '</p>',
         newsDisplayed += '</a>',
